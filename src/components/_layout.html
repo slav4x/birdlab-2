@@ -19,48 +19,15 @@
 	</head>
 	<body>
 
-		<div class="scaler-outer">
-			<div class="scaler-inner">
-				<div class="wrapper">
+		<div class="wrapper">
 
-					{% include 'components/_header.html' %}
+			{% include 'components/_header.html' %}
 
-					{% block content %}{% endblock %}
+			{% block content %}{% endblock %}
 
-					{% include 'components/_footer.html' %}
+			{% include 'components/_footer.html' %}
 
-				</div>
-			</div>
 		</div>
-
-		<script>
-			function scaleContent() {
-				const windowWidth = window.innerWidth;
-				const layout = windowWidth < 576 ? 'mobile' : windowWidth < 1024 ? 'tablet' : 'desktop';
-				const baseWidths = {
-					mobile: 320,
-					tablet: 768,
-					desktop: 1200,
-				};
-				const baseWidth = baseWidths[layout];
-				const scale = windowWidth / baseWidth;
-
-				const outer = document.querySelector('.scaler-outer');
-  				const inner = document.querySelector('.scaler-inner');
-
-				const innerContentHeight = inner.getBoundingClientRect().height / scale;
-				
-				if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-					inner.style.transform = 'none';
-					inner.style.zoom = scale;
-				} else {
-					outer.style.height = `${innerContentHeight * scale}px`;
-					inner.style.transform = `scale(${scale})`;
-				}
-			}
-
-			scaleContent();
-		</script>
 
 		<script defer src="./js/libs.js?cb"></script>
 		<script defer src="./js/main.js?cb"></script>

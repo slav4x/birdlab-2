@@ -1,11 +1,3 @@
-window.addEventListener('load', () => {
-  scaleContent();
-});
-
-window.addEventListener('resize', () => {
-  scaleContent();
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   // Fancybox.bind('[data-fancybox]', {
   //   dragToClose: false,
@@ -13,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //   placeFocusBack: false,
   //   Thumbs: false,
   // });
-
-  scaleContent();
 
   const partnersCarousel = new Swiper('.partners-carousel', {
     loop: true,
