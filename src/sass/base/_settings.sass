@@ -1,0 +1,126 @@
+// html
+//   scroll-behavior: smooth
+
+body
+  font-family: 'Aeonik Pro', sans-serif
+  font-weight: 400
+  font-size: 16px
+  min-width: 320px
+  color: var(--color-black)
+  background: var(--color-bg)
+  &::-webkit-scrollbar
+    width: 2px
+    background: var(--color-bg)
+  &::-webkit-scrollbar-thumb
+    background: var(--color-accent)
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+a
+  color: inherit
+  text-decoration: none
+
+input, textarea, button, select
+  outline: none
+  border: 0
+  border-radius: 0
+
+button
+  cursor: pointer
+
+input, textarea
+  background: transparent
+
+.scaler
+  // width: 100%
+  // overflow: hidden
+  &-outer
+    overflow-x: hidden
+    overflow-y: auto
+    height: 100vh
+    width: 100vw
+    &::-webkit-scrollbar
+      width: 2px
+      background: var(--color-bg)
+    &::-webkit-scrollbar-thumb
+      background: var(--color-accent)
+  &-inner
+    transform-origin: top left
+    width: fit-content
+
+.wrapper
+  width: 1200px
+  padding: 0 20px
+  // margin: 0 auto
+
+.btn
+  padding: 18px
+  line-height: 18px
+  font-size: 16px
+  border-radius: 99px
+  color: #fff
+  @include flexbox
+  text-align: center
+  align-items: center
+  justify-content: center
+  gap: 4px
+  &-wrap
+    @include flexbox
+    align-items: center
+    gap: 8px
+  &-darkblue
+    background: #354E77
+  &-accent
+    background: var(--color-accent)
+    box-shadow: 0px 5px 23.2px rgba(107, 5, 230, 0.21)
+  &-star
+    box-shadow: inset 0 0 0 1px rgba(26, 26, 26, 0.1)
+    color: var(--color-black)
+    &::before
+      content: ''
+      display: block
+      width: 14px
+      height: 14px
+      background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.17082 1.22999C6.56723 0.641968 7.43277 0.641967 7.82918 1.22999L8.90419 2.82464C9.07636 3.08003 9.35661 3.24184 9.66387 3.26325L11.5824 3.3969C12.2898 3.44619 12.7226 4.19577 12.4116 4.83309L11.5681 6.5614C11.433 6.8382 11.433 7.1618 11.5681 7.4386L12.4116 9.16691C12.7226 9.80422 12.2898 10.5538 11.5824 10.6031L9.66387 10.7368C9.35661 10.7582 9.07636 10.92 8.90419 11.1754L7.82918 12.77C7.43277 13.358 6.56723 13.358 6.17082 12.77L5.09581 11.1754C4.92364 10.92 4.64339 10.7582 4.33613 10.7368L2.41762 10.6031C1.71017 10.5538 1.2774 9.80422 1.58844 9.16691L2.43194 7.4386C2.56703 7.1618 2.56703 6.8382 2.43194 6.5614L1.58844 4.83309C1.2774 4.19578 1.71017 3.44619 2.41762 3.3969L4.33613 3.26325C4.64339 3.24184 4.92364 3.08003 5.09581 2.82464L6.17082 1.22999Z' fill='%236B05E6'/%3E%3C/svg%3E%0A") no-repeat center
+  &-white
+    background: #fff
+    color: var(--color-black)
+
+.title
+  font-weight: 400
+  text-align: center
+  line-height: 1.11
+  font-size: 200px
+  font-family: 'Vasek'
+  font-style: italic
+  font-weight: 400
+  letter-spacing: -0.01em
+  color: var(--color-accent)
+  position: relative
+  height: 222px
+  span
+    font-size: 18px
+    font-family: 'Aeonik Pro'
+    font-weight: 400
+    font-style: normal
+    color: var(--color-black)
+    letter-spacing: -0.01em
+    line-height: 1
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+
+.scroller-container::before,
+.scroller-container::after
+  width: 90px
+  border: 0
+  pointer-events: none
+
+.scroller-container::before
+  background: linear-gradient(90deg, #fff, transparent)
+
+.scroller-container::after
+  background: linear-gradient(-90deg, #fff, transparent)

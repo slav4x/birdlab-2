@@ -1,0 +1,28 @@
+.footer
+	padding: 40px 20px 30px
+	margin: 0 -20px
+	background: linear-gradient(208.76deg, #080D24 13.5%, #181D35 91.87%), #111111
+	border-radius: 20px 20px 0px 0px
+	@include flexbox
+	align-items: flex-end
+	justify-content: space-between
+	color: #fff
+	&-text
+		font-size: 12px
+		line-height: 1.2
+		@include flexbox
+		align-items: flex-end
+		gap: 30px
+	&-info
+		p
+			opacity: 0.4
+			margin-top: 3px
+			&:first-child
+				margin-top: 0
+	&-links
+		li:not(:first-child)
+			margin-top: 3px
+	&-buttons
+		@include flexbox
+		align-items: center
+		gap: 8px

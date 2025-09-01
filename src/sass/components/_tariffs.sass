@@ -1,0 +1,232 @@
+.tariffs
+	padding: 50px 0
+	.title
+		max-width: 410px
+		margin: 0 auto
+		text-align: left
+		span
+			transform: none
+			left: initial
+			right: 0
+			bottom: 30px
+	&-grid
+		@include flexbox
+		gap: 16px
+		margin-top: 20px
+	&-item
+		width: calc((100% - (2 * 16px)) / 3)
+		background: #fff
+		padding: 12px
+		border-radius: 20px
+		@include flexbox
+		flex-direction: column
+		align-items: flex-start
+		&-start
+			.tariffs-item__head
+				background: linear-gradient(106.99deg, #111111 29.77%, #333333 95.21%)
+		&-optima
+			background: linear-gradient(208.76deg, #080D24 13.5%, #181D35 91.87%)
+			color: #fff
+			.tariffs-item__head
+				background: linear-gradient(106.99deg, #5850EC 29.77%, #963FFF 95.21%)
+			.tariffs-item__desc,
+			.tariffs-item__total li
+				border-color: rgba(255,255,255,.2)
+		&-max
+			.tariffs-item__head
+				background: linear-gradient(106.99deg, #FF2151 29.77%, #FF6586 95.21%)
+		&__head
+			width: 100%
+			height: 76px
+			position: relative
+			border-radius: 18px
+			background: #eee
+			color: #fff
+			&::before
+				content: 'Тариф'
+				position: absolute
+				top: 10px
+				left: 15px
+				line-height: 1.1
+				font-size: 14px
+			span
+				position: absolute
+				right: 15px
+				top: -12px
+				font-family: 'Vasek'
+				font-style: italic
+				font-size: 96px
+				line-height: 1.11
+		&__desc
+			width: 100%
+			padding: 12px 15px
+			line-height: 1.28
+			letter-spacing: -0.01em
+			font-size: 15px
+			border-bottom: 1px solid rgba(0,0,0,.2)
+		&__content
+			width: 100%
+			padding: 12px 15px
+			margin-bottom: 20px
+			b
+				font-size: 14px
+				line-height: 1.4
+				display: block
+			ul
+				font-size: 14px
+				line-height: 1.33
+				letter-spacing: -0.01em
+				li
+					margin-top: 10px
+					padding-left: 14px
+					position: relative
+					&::before
+						content: ''
+						position: absolute
+						top: 6px
+						left: 0
+						width: 6px
+						height: 6px
+						border-radius: 100%
+						background: var(--color-accent)
+					span
+						opacity: 0.4
+					&.no
+						opacity: 0.4
+						text-decoration: line-through
+						span
+							opacity: 1
+						&::before
+							background: var(--color-black)
+					&.accent
+						color: var(--color-accent)
+						span
+							color: var(--color-black)
+		&__total
+			width: 100%
+			margin-top: auto
+			li
+				padding: 12px 15px
+				@include flexbox
+				align-items: center
+				justify-content: space-between
+				border-bottom: 1px solid rgba(0,0,0,.2)
+				p
+					font-size: 14px
+					line-height: 1.1
+				b
+					font-size: 32px
+					line-height: 1.1
+					font-weight: 400
+		&__cta
+			width: 100%
+			padding: 12px 15px
+			p
+				text-align: center
+				margin-bottom: 16px
+				font-size: 14px
+				line-height: 1.4
+	&-free
+		margin-top: 16px
+		border-radius: 20px
+		color: #fff
+		padding: 30px
+		background: linear-gradient(208.76deg, #080D24 13.5%, #181D35 91.87%)
+		&__head
+			padding: 20px 0 50px
+			text-align: center
+			border-bottom: 1px solid rgba(255,255,255,.15)
+			margin: 0 15px
+			p
+				font-size: 18px
+				line-height: 1.1
+			span
+				font-family: 'Vasek'
+				font-style: italic
+				display: block
+				font-size: 200px
+				line-height: 0.3
+				color: var(--color-accent)
+				margin-bottom: 30px
+		&__bonus
+			&-title
+				font-size: 42px
+				line-height: 1.1
+				letter-spacing: -0.01em
+				text-align: center
+				margin: 20px 0 30px
+			&-list
+				@include flexbox
+				margin-top: 30px
+				gap: 8px
+				margin-bottom: 8px
+				counter-reset: bonus
+			&-item
+				height: 220px
+				flex: 1
+				padding: 15px
+				background: #090B16
+				border-radius: 16px
+				@include flexbox
+				flex-direction: column
+				align-items: flex-start
+				counter-increment: bonus
+				position: relative
+				&::before
+					content: counter(bonus, decimal-leading-zero)
+					display: block
+					margin-bottom: 15px
+					font-size: 12px
+					line-height: 1.1
+					opacity: 0.4
+				&:nth-child(2)
+					width: 240px
+					flex: initial
+				&:nth-child(3)
+					.tariffs-free__bonus-bottom
+						p:first-child
+							opacity: 1
+				&:last-child
+					background: #fff
+					color: var(--color-black)
+					.tariffs-free__bonus-head
+						position: relative
+						padding-left: 50px
+						img
+							width: 50px
+							position: absolute
+							left: -10px
+							top: -2px
+			&-head
+				width: 100%
+				font-size: 14px
+				line-height: 1.1
+				letter-spacing: -0.01em
+				p
+					margin-top: 8px
+					opacity: 0.4
+					&:first-child
+						margin-top: 0
+						opacity: 1
+			&-bottom
+				width: 100%
+				margin-top: auto
+				font-size: 12px
+				line-height: 1.1
+				letter-spacing: -0.01em
+				p
+					display: block
+					margin-top: 8px
+					opacity: 0.4
+					&:first-child
+						margin-top: 0
+			&-type
+				position: absolute
+				top: 10px
+				right: 10px
+				font-size: 12px
+				line-height: 8px
+				color: rgba(255,255,255,.4)
+				padding: 5px
+				border-radius: 99px
+				background: #1C2243

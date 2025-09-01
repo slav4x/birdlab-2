@@ -1,0 +1,160 @@
+.algorithm
+	padding: 50px 0
+	&-main
+		padding-bottom: 16px
+	.title
+		span
+			&:first-child
+				top: 50px
+			&:last-child
+				bottom: -6px
+				width: 100px
+				margin-left: 190px
+				text-align: left
+	&-button
+		margin: 0 auto
+		max-width: 340px
+		text-align: center
+		@include flexbox
+		flex-direction: column
+		align-items: center
+		gap: 24px
+		margin-top: 30px
+		p
+			line-height: 1.4
+			letter-spacing: -0.01em
+			b
+				color: var(--color-accent)
+	&-after
+		height: 170px
+		border-radius: 20px
+		background: #fff
+		@include flexbox
+		align-items: center
+		justify-content: space-between
+		padding-left: 30px
+		padding-right: 40px
+		&__title
+			font-size: 42px
+			line-height: 1.1
+			letter-spacing: -0.01em
+			span
+				font-family: 'Vasek'
+				font-style: italic
+				font-size: 96px
+				line-height: 1.1
+				letter-spacing: -0.01em
+				color: var(--color-accent)
+				display: block
+				margin-top: -45px
+				margin-bottom: -20px
+		&__images
+			@include flexbox
+			align-items: center
+			gap: 8px
+			img
+				height: 72px
+		&__text
+			line-height: 1.4
+			letter-spacing: -0.01em
+			max-width: 255px
+	&-steps
+		padding: 30px 0
+		@include flexbox
+		width: max-content
+		counter-reset: steps
+		&__wrapper
+			background: #fff
+			border-radius: 20px
+			overflow: hidden
+			margin-top: 30px
+		&__item
+			width: 310px
+			height: 500px
+			padding: 0 30px
+			border-right: 1px solid #EBEBEB
+			counter-increment: steps
+			@include flexbox
+			flex-direction: column
+			align-items: flex-start
+			position: relative
+			&::before
+				content: 'Шаг ' counter(steps)
+				font-size: 14px
+				line-height: 1.1
+				letter-spacing: -0.01em
+				margin-bottom: 6px
+				opacity: 0.5
+				display: block
+			&:nth-child(1)
+				.algorithm-steps__line
+					top: 155px
+					background: linear-gradient(208.76deg, #080D24 13.5%, #181D35 91.87%)
+			&:nth-child(2)
+				.algorithm-steps__line
+					top: 205px
+					background: linear-gradient(89.88deg, #C1E61B 12.93%, #CFDD16 86.24%)
+			&:nth-child(3)
+				.algorithm-steps__line
+					top: 255px
+					background: linear-gradient(89.88deg, #FF35E4 12.93%, #FF519C 86.24%)
+			&:nth-child(4)
+				.algorithm-steps__line
+					top: 305px
+					background: linear-gradient(89.88deg, #FF5335 12.93%, #FFA851 86.24%)
+			&:nth-child(5)
+				.algorithm-steps__line
+					top: 355px
+					background: linear-gradient(89.88deg, #2ADEA5 12.93%, #51FFB4 86.24%)
+			&:nth-child(6)
+				.algorithm-steps__line
+					top: 405px
+					background: linear-gradient(89.88deg, #302ADE 12.93%, #5751FF 86.24%)
+			&:nth-child(7)
+				.algorithm-steps__line
+					top: 455px
+					background: linear-gradient(89.88deg, #E61B47 12.93%, #FF3758 86.24%)
+			&:last-child
+				border: 0
+				width: 480px
+				.algorithm-steps__line
+					right: 30px
+		&__title
+			padding: 4px 5px
+			margin: 0 -5px
+			span
+				font-size: 21px
+				font-weight: 700
+				line-height: 1.1
+				letter-spacing: -0.01em
+				display: block
+			&.green
+				background: linear-gradient(89.88deg, #C1E61B 12.93%, #CFDD16 86.24%)
+				transform: rotate(-1deg)
+				span
+					transform: rotate(1deg)
+			&.red
+				background: linear-gradient(89.88deg, #E61B47 12.93%, #FF3758 86.24%)
+				color: #fff
+				transform: rotate(-1deg)
+				span
+					transform: rotate(1deg)
+		&__text
+			font-size: 14px
+			line-height: 1.1
+			letter-spacing: -0.01em
+			margin-top: 12px
+			max-width: 250px
+		&__line
+			position: absolute
+			left: 15px
+			right: -60px
+			height: 40px
+			border-radius: 99px
+			background: #eee
+		&__done
+			position: absolute
+			z-index: 12
+			height: 216px
+			left: 100px
+			bottom: -54px

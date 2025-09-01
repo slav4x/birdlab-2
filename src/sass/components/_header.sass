@@ -1,0 +1,29 @@
+.header
+	@include flexbox
+	align-items: center
+	padding-top: 30px
+	justify-content: space-between
+	&-nav
+		@include flexbox
+		align-items: center
+		gap: 30px
+		font-size: 14px
+		line-height: 1.4
+		letter-spacing: -0.01em
+		li
+			a
+				@include flexbox
+				align-items: flex-start
+				transition: color .3s
+				span
+					display: inline-block
+					background: #fff
+					border-radius: 99px
+					color: var(--color-accent)
+					font-size: 10px
+					line-height: 10px
+					padding: 2px 4px
+					margin-top: -4px
+					margin-left: 4px
+				&:hover
+					color: var(--color-accent)

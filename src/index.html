@@ -1,0 +1,712 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Главная' %}
+
+{% block content %}
+
+<section class="hero">
+	<div class="hero-content">
+		<h1 class="hero-title"><span>за 3 дня</span> соберем лендинг, который будет приносить заявки</h1>
+		<h2 class="hero-desc"><span>Все для достижения вашей цели —</span> тексты, структура, дизайн, реализация. Без головной боли и в срок.</h2>
+		<div class="hero-buttons btn-wrap">
+			<a href="#" class="btn btn-accent">Оставить заявку</a>
+			<a href="#cases" class="btn btn-star">Смотреть кейсы</a>
+		</div>
+		<div class="hero-gift">
+			<img src="img/hero-gift.png" alt="" width="90">
+			<p><span><b>Оставьте заявку —</b></span> и завтра мы покажем, как может выглядеть <b>ваш лендинг</b></p>
+		</div>
+	</div>
+	<div class="hero-poster">
+		<img src="img/hero-poster.jpg?v=2" alt="" class="hero-poster__image">
+		<a href="#" class="hero-poster__video">
+			<span>00:40</span>
+			<img src="img/hero-video.png" alt="">
+			<p><b>Видео:</b> чем мы помогаем онлайн-школам</p>
+		</a>
+	</div>
+</section>
+
+<section class="partners">
+	<h2 class="partners-title">С нами работают топы рынка и лучшие продюсеры</h2>
+	<div class="partners-carousel">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/partners-01.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-02.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-03.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-04.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-05.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-06.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-07.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-08.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-09.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-10.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-11.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-12.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-13.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-14.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-15.jpg" alt="" loading="lazy"></div>
+			<div class="swiper-slide"><img src="img/partners-16.jpg" alt="" loading="lazy"></div>
+		</div>
+	</div>
+	<div class="partners-join">
+		<h2 class="partners-join__title"><span><i>90%</i>партнеров</span>продолжают работу с нами после 1&nbsp;проекта</h2>
+		<div class="partners-join__action">
+			<p><b>Присоединяйтесь,</b> чтобы делать продукты на миллионы</p>
+			<a href="#" class="btn btn-white">Оставить заявку</a>
+		</div>
+		<div class="partners-join__carousel">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">120 000+</div>
+						<div class="partners-join__item-text">единиц контента сделали: от лендингов до презентаций</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">10+ лет</div>
+						<div class="partners-join__item-text">в диджитале, 5 лет<br> в инфобизнесе</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">12</div>
+						<div class="partners-join__item-text">специалистов, которые всегда готовы приступить к работе</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">5 000+</div>
+						<div class="partners-join__item-text">вариантов и гипотез протестировали, чтобы выявить самые эффективные </div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">13</div>
+						<div class="partners-join__item-text">партнеров работают с нами 5+ лет на постоянной основе</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="partners-join__item">
+						<div class="partners-join__item-number">100%</div>
+						<div class="partners-join__item-text" style="max-width: 100%;">Процессов регламентированы, вы получите предсказуемый результат, «ловить» дизайнера в день запуска не придется</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cases" id="cases">
+	<h2 class="title">Наши кейсы<span>Гордимся каждым проектом</span></h2>
+	<ul class="cases-tags">
+		<li data-tag="Все" class="active">Все</li>
+		<li data-tag="Сайты">Сайты</li>
+		<li data-tag="Онлайн-курсы">Онлайн-курсы</li>
+		<li data-tag="Презентации">Презентации</li>
+		<li data-tag="Приложения">Приложения</li>
+	</ul>
+	<div class="cases-carousel__wrapper">
+		<div class="cases-carousel">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cases-item">
+						<img src="img/case-01.jpg" alt="" loading="lazy" class="cases-item__poster">
+						<div class="cases-item__content">
+							<div class="cases-item__title">Ксения Машкина: 2 сайта и 2 презентации под вебинары</div>
+							<div class="cases-item__text">Упаковали 2 запуска для блогера Ксении Машкиной. </div>
+						</div>
+						<ul class="cases-item__tags">
+							<li>Сайт</li>
+							<li>Презентация</li>
+						</ul>
+						<a href="#" class="cases-item__button">Смотреть кейс</a>
+					</div>
+				</div>
+			</div>
+			<div class="cases-carousel__prev"></div>
+			<div class="cases-carousel__next"></div>
+		</div>
+	</div>
+	<div class="cases-result">
+		<p>У нас огромное количество кейсов.<br> <b>Сделаем вам лучший результат?</b></p>
+		<div class="btn-wrap">
+			<a href="#" class="btn btn-accent">Хочу также!</a>
+			<a href="#" class="btn btn-star">Больше кейсов</a>
+		</div>
+	</div>
+</section>
+
+<section class="help" id="help">
+	<h2 class="title">Мы поможем вам, если</h2>
+	<div class="help-section">
+		<div class="help-title">Вы только готовитесь к запуску, и…</div>
+		<div class="help-grid">
+			<div class="help-item help-item-two">
+				<img src="img/help-01.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>01/05</span>
+					<p><b>Нет понимания, с чего начать</b> — структура, платформа, сайт?</p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-02.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>02/05</span>
+					<p>Есть текст, но <b>не знаете, как превратить его в продающий лендинг</b></p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-03.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>03/05</span>
+					<p><b>Нужно срочно собрать всё под запуск</b>, а нормальных подрядчиков нет</p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-04.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>04/05</span>
+					<p>Боитесь, что упаковка получится «дешёвой» и <b>не вызовет доверия</b></p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-05.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>05/05</span>
+					<p><b>Хочется нормальный визуал</b>, который не будет отдавать «инфоцыганщиной»</p>
+				</div>
+			</div>
+			<div class="help-cta help-item-two">
+				<div class="help-cta__text"><b>Поможем упаковать запуск с нуля</b> — с визуалом, логикой и сборкой. Без срывов и выноса мозга.</div>
+				<a href="#" class="btn btn-white">Нужна помощь на старте</a>
+			</div>
+		</div>
+	</div>
+	<div class="help-section help-section-black">
+		<div class="help-title">Вы запускаетесь регулярно, но…</div>
+		<div class="help-grid">
+			<div class="help-item">
+				<img src="img/help-06.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>01/06</span>
+					<p>Хочется нормальную упаковку, <b>которая отражает уровень школы</b></p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-07.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>02/06</span>
+					<p>Каждый раз <b>приходится собирать новую команду</b> с нуля</p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-08.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>03/06</span>
+					<p>Дизайнеры не понимают, что нужно продюсеру, <b>делают «красиво», но не «в тему»</b></p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-09.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>04/06</span>
+					<p><b>Всё идёт через ж*</b>: сроки горят, макеты бесконечно правятся, спецы не понимают что нужно</p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-10.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>05/06</span>
+					<p>Сайт вроде бы есть, но <b>не вызывает доверия и не продаёт</b></p>
+				</div>
+			</div>
+			<div class="help-item">
+				<img src="img/help-11.jpg" alt="" loading="lazy" class="help-item__image">
+				<div class="help-item__text">
+					<span>06/06</span>
+					<p>Быстро нужны воронки, презентации, лендинги, <b>а исполнители тормозят</b></p>
+				</div>
+			</div>
+			<div class="help-cta help-item-two">
+				<div class="help-cta__text"><b>Выдаем команду под запуск:</b> от дизайнеров до методолога и монтажёра. Встраиваемся в процесс и доводим до результата</div>
+				<a href="#" class="btn btn-white">Нужна ТОП-упаковка</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="why" id="why">
+	<h2 class="title">Почему мы<span>а не фрилансеры?</span></h2>
+	<div class="why-grid">
+		<div class="why-col">
+			<div class="why-item why-item-black">
+				<div class="why-item__label">Качество</div>
+				<div class="why-item__title">Узкая специализация и точный подход</div>
+				<div class="why-item__text">200+ упаковок в инфобизнесе. Вы получаете не просто сайт, а инструмент, заточенный под продажи в вашей нише.</div>
+				<div class="why-item__top">
+					<img src="img/top-cases.png" alt="" loading="lazy">
+					<p>Десятки кейсов с ТОПами инфобизнеса</p>
+				</div>
+				<div class="why-item">
+					<div class="why-item__label">Win-win</div>
+					<div class="why-item__title">Предсказуемый результат</div>
+					<div class="why-item__text"><b>Перед началом делаем бесплатную мини-концепцию.</b> Вы заранее понимаете, как будет выглядеть ваш проект, и за что вы платите.</div>
+				</div>
+			</div>
+		</div>
+		<div class="why-col">
+			<div class="why-item">
+				<div class="why-item__label">Скорость</div>
+				<div class="why-item__title">Высокая скорость работы</div>
+				<div class="why-item__text">Берёмся быстро, работаем параллельно, не жертвуя качеством. <b>Большинство проектов закрываем за 7–14 дней.</b></div>
+			</div>
+			<div class="why-item">
+				<div class="why-item__label">Многозадачность</div>
+				<div class="why-item__title">Один подрядчик на весь запуск и продукт</div>
+				<div class="why-item__text"><b>Вместо 5 подрядчиков — один.</b> Мы берём на себя весь продакшн, вы — только утверждаете.</div>
+			</div>
+			<div class="why-item">
+				<div class="why-item__label">Спокойствие</div>
+				<div class="why-item__title">Экономия времени и нервов</div>
+				<div class="why-item__text">Мы сами контролируем всех исполнителей, дедлайны и качество. <b>Вы только принимаете результат и двигаетесь по плану.</b></div>
+			</div>
+			<div class="why-item">
+				<div class="why-item__label">Удобство</div>
+				<div class="why-item__title">Все проекты ведем в открытых сервисах</div>
+				<div class="why-item__text"><b>Notion, Figma, Google Docs и т.д.</b> Никаких «сюрпризов» в день сдачи проекта. Вы всегда видите, что на каком этапе, кто за что отвечает и когда будет результат.</div>
+			</div>
+			<div class="why-item">
+				<div class="why-item__label">Официально</div>
+				<div class="why-item__title">Работаем строго по договору через ИП</div>
+				<div class="why-item__text"><b>Все платежи проходят официально</b> — без переводов «на карту». Вы получаете договор, чек и закрывающие документы, а мы — ответственность за результат.</div>
+			</div>
+			<div class="why-item">
+				<div class="why-item__label">Спокойствие</div>
+				<div class="why-item__title">Оперативная<br> обратная связь</div>
+				<div class="why-item__text">На связи не просто «менеджер», а арт-директор и руководитель проекта. В любой момент вы можете получить помощь и решение.</div>
+			</div>
+		</div>
+		<div class="why-col">
+			<div class="why-item">
+				<div class="why-item__content">
+					<div class="why-item__label">Команда</div>
+					<div class="why-item__title">Персональная команда под ваш проект</div>
+					<div class="why-item__text">Мы не просто берём задачу, а собираем под неё команду — от методолога до дизайнера и монтажёра. Работаем как своя внутренняя команда, с полной ответственностью за результат.</div>
+					<div class="why-item__text">Мотивация и бонусы команды зависят от результатов в вашем проекте. Среди них есть живая конкуренция - каждый стремится показать лучший результат.</div>
+					<div class="why-item__button">
+						<p>Проверьте, как мы встроимся в вашу команду</p>
+						<a href="#" class="btn btn-accent">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="why-item__scroll">
+					<div class="why-item__scroll-col">
+						<div class="why-item__scroll-item why-item__scroll-item-black">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-01.jpg" alt="" loading="lazy">
+								<p>Екатерина</p>
+							</div>
+							<div class="why-item__scroll-name">Менеджер проектов</div>
+							<div class="why-item__scroll-text">
+								<p>Всегда на связи. Разбирается во внутрянке запусков, инфобизнесе, маркетинге и дизайне. Может дать компетентный ответ по любому вашему вопросу.</p>
+								<p><span>Присылает вам отчеты о проделанной работе. Держит в курсе всех процессов.</span></p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-02.jpg" alt="" loading="lazy">
+								<p>Артур</p>
+							</div>
+							<div class="why-item__scroll-name">Тимлид маркетологов</div>
+							<div class="why-item__scroll-text">
+								<p><span>Настраивает работу команды методологов и копирайтеров. Отвечает за то, чтобы суть проекта была передана точно и выгодно.</span></p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-03.jpg" alt="" loading="lazy">
+								<p>Валерия</p>
+							</div>
+							<div class="why-item__scroll-name">Методолог</div>
+							<div class="why-item__scroll-text">
+								<p><span>Создает образовательные системы, повышает доходимость и процент успешных кейсов в ваших инфопродуктах.</span></p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-04.jpg" alt="" loading="lazy">
+								<p>Елизавета</p>
+							</div>
+							<div class="why-item__scroll-name">Копирайтер-смысловик</div>
+							<div class="why-item__scroll-text">
+								<p><span>Однажды написала тексты на сайт так, что он собрал 7 223 заявки за 3 дня с конверсией 82%.</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="why-item__scroll-col">
+						<div class="why-item__scroll-item why-item__scroll-item-black">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-05.jpg" alt="" loading="lazy">
+								<p>Михаил</p>
+							</div>
+							<div class="why-item__scroll-name">CEO / Арт-директор</div>
+							<div class="why-item__scroll-text">
+								<p>Также всегда на связи и поможет по любым вопросам.</p>
+								<p><span>Придумывает концепцию проекта, ставит задачи и собирает команду. Следит за визуалом и смыслом, чтобы упаковка действительно продавала.</span></p>
+								<p><span>Ответственный за каждый проект.</span></p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-06.jpg" alt="" loading="lazy">
+								<img src="img/team-07.jpg" alt="" loading="lazy">
+								<img src="img/team-08.jpg" alt="" loading="lazy">
+								<img src="img/team-09.jpg" alt="" loading="lazy">
+								<img src="img/team-10.jpg" alt="" loading="lazy">
+							</div>
+							<div class="why-item__scroll-name">Ведущий дизайнер и дизайнеры</div>
+							<div class="why-item__scroll-text">
+								<p><span>Выделяем от 1 до 5 спецов под ваш проект, в зависимости от целей и объема.</span></p>
+								<p>Строят визуальный стиль, UX и эстетику проекта.</p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-11.jpg" alt="" loading="lazy">
+								<p>Вячеслав</p>
+							</div>
+							<div class="why-item__scroll-name">Главный разработчик</div>
+							<div class="why-item__scroll-text">
+								<p><span>Реализует любую идею в любой CMS или кодом. </span></p>
+							</div>
+						</div>
+						<div class="why-item__scroll-item">
+							<div class="why-item__scroll-avatars">
+								<img src="img/team-12.jpg" alt="" loading="lazy">
+								<p>Святослав</p>
+							</div>
+							<div class="why-item__scroll-name">Видеосъёмка, монтаж</div>
+							<div class="why-item__scroll-text">
+								<p><span>Делает динамичные монтажи, презентации и промо, которые продают на эмоции.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="algorithm">
+	<div class="algorithm-main">
+		<h2 class="title"><span>От заявки до готового лендинга за 7 шагов</span>Алгоритм работы<span>на основе 40+ наших кейсов</span></h2>
+		<div class="algorithm-steps__wrapper">
+			<div class="algorithm-steps">
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title"><span>Консультация</span></div>
+					<div class="algorithm-steps__text">Мы не просто «пообщаемся» — вы сразу поймёте, где теряете заявки и что нужно менять. Без воды: только конкретные шаги.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title green"><span>Бесплатная концепция</span></div>
+					<div class="algorithm-steps__text">Мы создадим ядро будущего сайта, чтобы было понятно, как он будет продавать.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title"><span>Подбор команды</span></div>
+					<div class="algorithm-steps__text">Вы не ищете подрядчиков по одному. Мы соберём нужных специалистов под ваш запрос — без косяков и фрилансеров, которые пропадают.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title"><span>Проработка смыслов</span></div>
+					<div class="algorithm-steps__text">Мы «переводим» вашу экспертизу на язык клиентов. Пишем понятнее, убедительнее и цепляем с первых слов.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title"><span>Дизайн</span></div>
+					<div class="algorithm-steps__text">Визуал будет «в тему»: без инфоцыганщины, шаблонов и устаревших приёмов. Упаковка, которая вызывает доверие и продаёт.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title"><span>Верстка</span></div>
+					<div class="algorithm-steps__text">Работаем на Tilda / Webflow / CMS — всё адаптируется, работает быстро, подключаются формы и CRM.</div>
+					<div class="algorithm-steps__line"></div>
+				</div>
+				<div class="algorithm-steps__item">
+					<div class="algorithm-steps__title red"><span>Тестирование и запуск</span></div>
+					<div class="algorithm-steps__text">Финальный этап: доводим до идеала, проверяем всё, чтобы не было сюрпризов после публикации.</div>
+					<div class="algorithm-steps__line"></div>
+					<img src="img/algorithm-done.png" alt="" class="algorithm-steps__done" loading="lazy">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="algorithm-after">
+		<div class="algorithm-after__title">После запуска<span>не пропадаем</span></div>
+		<div class="algorithm-after__images">
+			<img src="img/after-01.jpg" alt="" loading="lazy">
+			<img src="img/after-02.jpg" alt="" loading="lazy">
+		</div>
+		<div class="algorithm-after__text">Проведем А/Б-тесты, выявим наилучшие гипотезы и предложения <b>для достижения максимальных результатов</b></div>
+	</div>
+	<div class="algorithm-button">
+		<p><b>Пройдите с нами эти 7 шагов</b> — и снимите часть стресса от запуска</p>
+		<a href="#" class="btn btn-accent">Оставить заявку</a>
+	</div>
+</section>
+
+<section class="tariffs" id="tariffs">
+	<h2 class="title">Тарифы<span>на разработку сайта</span></h2>
+	<div class="tariffs-grid">
+		<div class="tariffs-item tariffs-item-start">
+			<div class="tariffs-item__head">
+				<span>Start</span>
+			</div>
+			<div class="tariffs-item__desc">Для тех, у кого уже есть готовые тексты и структура, и нужно быстро собрать лендинг</div>
+			<div class="tariffs-item__content">
+				<b>Что входит:</b>
+				<ul>
+					<li class="no">Персональный менеджер проекта</li>
+					<li class="no">Доработка структуры и смыслов с экспертом <span>(копирайтер)</span></li>
+					<li>UX-логика в дизайне <span>(прототип встроен в макет)</span></li>
+					<li>Уникальный веб-дизайн от Middle-дизайнера</li>
+					<li class="no">Отдельная отрисовка адаптивов: десктоп + мобильный </li>
+					<li>Реализация на Tilda</li>
+					<li>Базовая анимация</li>
+					<li class="no">A/B-тесты, гипотезы, мультилендинги, квизы</li>
+					<li class="no">Сопровождение и тестирование 3 дня после запуска</li>
+				</ul>
+			</div>
+			<ul class="tariffs-item__total">
+				<li>
+					<p>Сроки</p>
+					<b>От 3 дней</b>
+				</li>
+				<li>
+					<p>Стоимость</p>
+					<b>От 49 000 ₽</b>
+				</li>
+			</ul>
+			<div class="tariffs-item__cta">
+				<p><b>Узнайте, во сколько обойдётся ваш лендинг</b> — без звонков и впаривания</p>
+				<a href="#" class="btn btn-accent">Оставить заявку</a>
+			</div>
+		</div>
+		<div class="tariffs-item tariffs-item-optima">
+			<div class="tariffs-item__head">
+				<span>Optima</span>
+			</div>
+			<div class="tariffs-item__desc">Если есть частично контент или ТЗ, но нужно помочь доработать.</div>
+			<div class="tariffs-item__content">
+				<b>Что входит:</b>
+				<ul>
+					<li>Персональный менеджер проекта</li>
+					<li>Доработка структуры и смыслов с экспертом <span>(копирайтер)</span></li>
+					<li>UX-логика в дизайне <span>(прототип встроен в макет)</span></li>
+					<li>Уникальный веб-дизайн от Middle-дизайнера</li>
+					<li>Отдельная отрисовка адаптивов: десктоп + мобильный </li>
+					<li>Реализация на Tilda или Webflow</li>
+					<li>Базовая анимация</li>
+					<li class="no">A/B-тесты, гипотезы, мультилендинги, квизы</li>
+					<li>Сопровождение и тестирование 3 дня после запуска</li>
+				</ul>
+			</div>
+			<ul class="tariffs-item__total">
+				<li>
+					<p>Сроки</p>
+					<b>От 5 дней</b>
+				</li>
+				<li>
+					<p>Стоимость</p>
+					<b>От 69 000 ₽</b>
+				</li>
+			</ul>
+			<div class="tariffs-item__cta">
+				<p>Получите честную смету + <b>визуал<br> по вашему проеку</b></p>
+				<a href="#" class="btn btn-white">Оставить заявку</a>
+			</div>
+		</div>
+		<div class="tariffs-item tariffs-item-max">
+			<div class="tariffs-item__head">
+				<span>Max</span>
+			</div>
+			<div class="tariffs-item__desc">Подойдёт, если нет контента и нужно всё c поддержкой до результата.</div>
+			<div class="tariffs-item__content">
+				<b>Что входит:</b>
+				<ul>
+					<li>Персональный менеджер проекта</li>
+					<li>Глубокая проработка позиционирования, УТП, оффера, текстов <span>(копирайтер + методолог)</span></li>
+					<li class="accent">Отдельный UX-прототип под конверсию</li>
+					<li class="accent">Уникальный веб-дизайн от Senior-дизайнера</li>
+					<li>Отдельная отрисовка адаптивов: десктоп + мобильный + планшет</li>
+					<li>Реализация на любой платформе <span>(Tilda / Webflow / CMS)</span></li>
+					<li>Продвинутая анимация</li>
+					<li>A/B-тесты, гипотезы, мультилендинги, квизы</li>
+					<li class="accent">Ведение до результата <span>(проджект отвечает за запуск)</span></li>
+				</ul>
+			</div>
+			<ul class="tariffs-item__total">
+				<li>
+					<p>Сроки</p>
+					<b>От 14 дней</b>
+				</li>
+				<li>
+					<p>Стоимость</p>
+					<b>От 129 000 ₽</b>
+				</li>
+			</ul>
+			<div class="tariffs-item__cta">
+				<p>Разберём ваш продукт и предложим видение «под ключ» — <b>бесплатно</b></p>
+				<a href="#" class="btn btn-accent">Оставить заявку</a>
+			</div>
+		</div>
+	</div>
+	<div class="tariffs-free">
+		<div class="tariffs-free__head">
+			<p>Запишитесь на бесплатную консультацию и получите</p>
+			<span>персональный план</span>
+			<p>по упаковке вашей онлайн-школы или запуска</p>
+		</div>
+		<div class="tariffs-free__bonus-title">Бонусы при записи на консультацию</div>
+		<ul class="tariffs-free__bonus-list">
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-type">Тариф «Max»</div>
+				<div class="tariffs-free__bonus-head">
+					<p>Аудит вашей текущей упаковки</p>
+					<p>Разберём текущий сайт, визуал и структуру воронки: что тормозит рост, где теряются заявки.</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p><b>Вы получите PDF с конкретными правками</b>, которые можно внедрить сразу — даже без нашей помощи.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p>Готовые референсы и схемы успешных лендингов</p>
+					<p>Выберем 2–3 подхода под вашу нишу и покажем, как они влияют на конверсию.</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p>Отдадим примеры экранов и UX-логики, <b>которые сработали у наших клиентов</b>.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p>Ответы на ваши вопросы по GetCourse / сайтам / презентациям / визуалу</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p>Можно разобрать конкретный вопрос на созвоне — бесплатно.</p>
+					<p>Например: «Что не так с моим лендингом, как сделать его удобнее?», «Какой формат вебинара лучше сделать?» и т.д.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p><b>Чек-лист:</b> «Как быстро поднять конверсию сайта на 30–100%» небольшими усилиями.</p>
+					<img src="img/tariffs-bonus.jpg" alt="" loading="lazy">
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p><b>Узнаете, какие 7 ошибок съедают конверсию</b> и как быстро их исправить — без редизайна и программистов.</p>
+				</div>
+			</li>
+		</ul>
+		<a href="#" class="btn btn-accent">Получить бонусы</a>
+	</div>
+</section>
+
+<section class="offer">
+	<h2 class="title">Мы предлагаем<span>Чтобы не бегать по подрядчикам, посмотрите что еще</span></h2>
+	<div class="offer-scroller">
+		<div class="offer-grid">
+			<div class="offer-item">
+				<img src="img/offer-01.jpg" alt="" loading="lazy">
+				<b>Полная упаковка онлайн-курсов</b>
+				<p>От методологии и контента, который помогает ученикам лучше применять материал до визуала, который цепляет и застравляет возвращаться</p>
+			</div>
+			<div class="offer-item">
+				<img src="img/offer-02.jpg" alt="" loading="lazy">
+				<b>Презентации</b>
+				<p>Сделаем визуал, который захватит внимание аудитории</p>
+			</div>
+			<div class="offer-item">
+				<img src="img/offer-03.jpg" alt="" loading="lazy">
+				<b>Видео-продакшен</b>
+				<p>Смонтируем автовебы, уроки, Reels и Shorts. Накинем графику, цветокоррекцию, уберем лишнее</p>
+			</div>
+			<div class="offer-item">
+				<img src="img/offer-04.jpg" alt="" loading="lazy">
+				<b>GetСourse</b>
+				<p>Реализуем любой дизайн и геймификации на платформе</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

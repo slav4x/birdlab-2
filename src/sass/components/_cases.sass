@@ -1,0 +1,148 @@
+.cases
+	padding: 50px 0
+	.title
+		span
+			bottom: 30px
+	&-tags
+		@include flexbox
+		align-items: center
+		justify-content: center
+		margin-top: 20px
+		gap: 8px
+		li
+			cursor: pointer
+			background: #fff
+			border-radius: 99px
+			font-size: 16px
+			line-height: 18px
+			padding: 18px
+			transition: .3s
+			&.active
+				background: var(--color-black)
+				color: #fff
+	&-carousel
+		width: 872px
+		margin: 0 auto
+		&__wrapper
+			margin-top: 20px
+			position: relative
+		&__prev,
+		&__next
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 20
+			width: 54px
+			height: 54px
+			border: 1px solid transparent
+			border-radius: 100%
+			overflow: hidden
+			cursor: pointer
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 8px
+				height: 14px
+				background-repeat: no-repeat
+				background-position: center
+		&__prev
+			background: rgba(255, 255, 255, 0.5)
+			border-color: rgba(0, 0, 0, 0.1)
+			backdrop-filter: blur(6px)
+			left: 0
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.71996 0.278273C7.34649 -0.0928044 6.74095 -0.0927113 6.36742 0.278273L0.280078 6.32792C-0.0933589 6.69912 -0.0933589 7.30088 0.280078 7.67208L6.36742 13.7217C6.74095 14.0927 7.34649 14.0928 7.71996 13.7217C8.09342 13.3506 8.09328 12.7488 7.71996 12.3776L2.30888 7L7.71996 1.62243C8.09328 1.2512 8.09342 0.649422 7.71996 0.278273Z' fill='%231A1A1A'/%3E%3C/svg%3E%0A")
+		&__next
+			background: var(--color-black)
+			border-color: var(--color-black)
+			right: 0
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.280043 13.7217C0.65351 14.0928 1.25905 14.0927 1.63258 13.7217L7.71992 7.67208C8.09336 7.30088 8.09336 6.69912 7.71992 6.32792L1.63258 0.278273C1.25905 -0.0927115 0.65351 -0.0928045 0.280043 0.278273C-0.0934184 0.649422 -0.093277 1.2512 0.280043 1.62243L5.69112 7L0.280043 12.3776C-0.093277 12.7488 -0.0934184 13.3506 0.280043 13.7217Z' fill='white'/%3E%3C/svg%3E%0A")
+	&-item
+		background: #fff
+		border-radius: 20px
+		padding: 8px
+		@include flexbox
+		flex-direction: column
+		align-items: flex-start
+		height: 420px
+		transition: .3s
+		position: relative
+		overflow: hidden
+		&__poster
+			width: 100%
+			height: 120px
+			border-radius: 16px
+			object-fit: cover
+			object-position: center
+		&__content
+			width: 100%
+			padding: 12px 8px
+			flex: 1
+			overflow: hidden
+		&__title
+			font-weight: 700
+			font-size: 18px
+		&__text
+			margin-top: 12px
+			font-size: 14px
+			line-height: 1.25
+			opacity: 0.5
+		&__tags
+			width: 100%
+			@include flexbox
+			align-items: flex-start
+			gap: 8px
+			font-size: 14px
+			line-height: 16px
+			padding: 12px 8px
+			li
+				padding: 5px 8px
+				border-radius: 99px
+				color: var(--color-black)
+				background: #D9D9D9
+			& + .cases-item__tags
+				padding-top: 0
+				margin-top: -4px
+		&__button
+			margin: 0 8px 8px
+			background: var(--color-black)
+			@include flexbox
+			align-items: center
+			justify-content: center
+			text-align: center
+			color: #fff
+			font-size: 14px
+			height: 46px
+			border-radius: 14px
+			width: calc(100% - 16px)
+			transition: .3s
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: 10
+		&:hover
+			background: var(--color-black)
+			color: #fff
+			transform: rotate(-2.5deg)
+			.cases-item__button
+				background: var(--color-accent)
+	&-result
+		text-align: center
+		@include flexbox
+		flex-direction: column
+		align-items: center
+		gap: 24px
+		margin-top: 30px
+		p
+			line-height: 1.4
+			letter-spacing: -0.01em
+			b
+				color: var(--color-accent)
