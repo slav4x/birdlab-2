@@ -1,0 +1,161 @@
+.results
+	padding-top: 40px
+	.title
+		line-height: 0.33
+		padding-top: 50px
+		height: 184px
+		b
+			font-size: 87px
+			font-weight: 400
+			font-style: italic
+			text-shadow: -1.2px -1.2px 0 var(--color-accent), 1.2px -1.2px 0 var(--color-accent), -1.2px 1.2px 0 var(--color-accent), 1.2px 1.2px 0 var(--color-accent)
+			line-height: 0.33
+			display: inline-block
+			top: -20px
+			position: relative
+		span
+			margin-top: -50px
+	&-main
+		background: #fff
+		border-radius: 20px
+		padding: 33px
+		margin-top: 50px
+	&-total
+		padding: 50px 30px 30px
+		color: #fff
+		background: linear-gradient(208.76deg, #080D24 13.5%, #181D35 91.87%), #FFFFFF
+		box-shadow: 0px 8px 23.4px rgba(0, 0, 0, 0.06)
+		border-radius: 20px
+		position: relative
+		&__head
+			@include flexbox
+			align-items: flex-start
+			gap: 40px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			border-bottom: 1px solid rgba(255,255,255,.2)
+		&__title
+			font-size: 24px
+			line-height: 1.4
+			letter-spacing: -0.01em
+			max-width: 440px
+			margin-right: auto
+		&__text
+			letter-spacing: -0.01em
+			line-height: 1.4
+			max-width: 200px
+			&:last-child
+				max-width: 280px
+		&__table
+			background: #fff
+			padding: 20px
+			border-radius: 20px
+			color: var(--color-black)
+			&-title
+				line-height: 1.4
+				margin-bottom: 20px
+			&-row
+				@include flexbox
+				align-items: flex-start
+				padding: 6px 4px
+				line-height: 1.4
+				letter-spacing: -0.01em
+				&:nth-child(2n)
+					background: #f0f0f0
+					border-radius: 4px
+				&:first-child
+					opacity: 0.25
+			&-col
+				flex: 1
+				max-width: 260px
+				&:first-child
+					max-width: 100%
+		&__source
+			font-size: 14px
+			line-height: 1.4
+			letter-spacing: -0.01em
+			opacity: 0.5
+			position: absolute
+			bottom: 5px
+			right: 30px
+			font-style: italic
+
+	&-real
+		padding-top: 40px
+		&__title
+			margin-bottom: 40px
+			font-size: 42px
+			line-height: 1.1
+			letter-spacing: -0.01em
+		&__grid
+			@include flexbox
+			gap: 20px
+		&__case
+			width: calc(100% / 2 - 10px)
+			padding: 20px
+			border-radius: 20px
+			background: #F8F8F8
+			@include flexbox
+			align-items: flex-start
+			gap: 30px
+			&-text
+				margin-right: 10px
+				max-width: 250px
+				@include flexbox
+				flex-direction: column
+				align-items: flex-start
+				gap: 10px
+				h4
+					font-size: 18px
+					font-weight: 700
+					line-height: 1.1
+					letter-spacing: -0.01em
+					span
+						color: var(--color-accent)
+				p
+					line-height: 1.1
+					letter-spacing: -0.01em
+
+			&-images
+				margin-left: auto
+				max-width: 200px
+				@include flexbox
+				flex-direction: column
+				align-items: flex-start
+				gap: 4px
+				img
+					width: 100%
+					border: 1px solid #EEEEEE
+					box-shadow: 0px 8px 23.4px rgba(0, 0, 0, 0.06)
+					border-radius: 10px
+
+			&-conversion
+				margin-top: auto
+				width: 100%
+				position: relative
+				img
+					width: 100%
+					border-radius: 14px
+				p
+					font-size: 14px
+					line-height: 1.4
+					position: absolute
+					bottom: -20px
+					left: 0
+					opacity: 0.45
+					font-style: italic
+	&-button
+		margin: 0 auto
+		max-width: 340px
+		text-align: center
+		@include flexbox
+		flex-direction: column
+		align-items: center
+		gap: 30px
+		margin-top: 36px
+		p
+			line-height: 1.4
+			letter-spacing: -0.01em
+
+	& + .partners
+		padding-top: 20px
