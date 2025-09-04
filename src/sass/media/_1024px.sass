@@ -1,3 +1,166 @@
 @media(max-width: 1024px)
 	.wrapper
-		width: 768px
+		max-width: 1024px
+
+	.title
+		line-height: 0.33
+		font-size: 124px
+		height: auto !important
+
+	.results
+		.title
+			b
+				font-size: 44px
+				text-shadow: -0.5px -0.5px 0 var(--color-accent), 0.5px -0.5px 0 var(--color-accent), -0.5px 0.5px 0 var(--color-accent), 0.5px 0.5px 0 var(--color-accent)
+		&-real
+			&__case
+				flex-direction: column
+				padding-bottom: 40px
+				&-images
+					margin-left: 0
+					width: 100%
+					order: -1
+				&-conversion
+					p
+						bottom: -40px
+
+	.partners
+		&-join
+			padding: 40px
+			padding-right: 10px
+			&__title
+				max-width: 320px
+			&__carousel
+				max-width: 320px
+				right: 20px
+
+	.cases
+		.title
+			margin-bottom: 40px
+			span
+				padding-bottom: 20px
+
+	.help
+		.title
+			margin-bottom: 40px
+		&-item,
+		&-cta
+			flex: 1
+			width: auto !important
+			min-width: calc(50% - 6px) !important
+
+	.why
+		.title
+			margin-bottom: 70px
+			span
+				bottom: -30px
+		&-col
+			width: 100% !important
+			&:nth-child(1),
+			&:nth-child(2)
+				background: #10152C
+			&:nth-child(1)
+				// padding: 25px
+				border-top-left-radius: 20px
+				border-top-right-radius: 20px
+			&:nth-child(2)
+				padding: 8px
+				border-bottom-left-radius: 20px
+				border-bottom-right-radius: 20px
+				margin-top: -16px
+		&-item
+			&__top
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 30px
+			&-black
+				// padding: 0
+				border-radius: 0
+				background: transparent
+			&__scroll
+				width: calc(100% + 50px)
+				max-width: initial
+				margin: 25px -25px 0
+				padding: 0 25px
+				padding-right: 17px
+				display: grid
+				height: auto
+				&-col
+					display: grid
+					grid-auto-flow: column
+					grid-template-columns: minmax(240px, 1fr)
+				&-item
+					min-width: 240px
+				&-avatars
+					img
+						width: calc((100% - 16px) / 3)
+						&:nth-child(3),
+						&:nth-child(4)
+							display: none
+			&__button
+				display: none
+			&__label
+				margin-bottom: 40px
+
+	.algorithm
+		.title
+			margin-bottom: 80px
+			padding-top: 40px
+			span
+				&:first-child
+					top: 0
+				&:last-child
+					bottom: -50px
+					margin-left: 170px
+					width: 140px
+		&-after
+			flex-direction: column
+			height: auto
+			padding: 25px
+			gap: 20px
+			&__images
+				flex-direction: row
+
+	.tariffs
+		.title
+			text-align: center
+			margin-bottom: 40px
+			span
+				position: relative
+				bottom: 0
+				display: block
+				padding-top: 30px
+		&-item
+			width: 100%
+			&__cta
+				p
+					br
+						display: none
+		&-free
+			&__head
+				margin: 0
+			&__bonus
+				&-title
+					text-align: left
+				&-list
+					display: grid
+					grid-auto-flow: column
+					grid-template-columns: minmax(280px, 1fr)
+					overflow: auto
+					padding: 0 30px
+					margin-left: -30px
+					margin-right: -30px
+
+					&::-webkit-scrollbar
+						display: none
+				&-item
+					flex: initial
+					width: 280px !important
+
+	.offer
+		.title
+			padding-top: 40px
+			margin-bottom: 40px
+			span
+				top: 0
+				margin: 0
