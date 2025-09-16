@@ -1,1 +1,380 @@
-// @media(max-width: 768px)
+@media(max-width: 768px)
+	.wrapper
+		max-width: 576px
+		padding: 0 10px
+
+	.title
+		font-size: 100px
+		line-height: 0.8
+		span
+			font-size: 16px
+			line-height: 1.1
+
+	.btn
+		width: 100%
+		max-width: 266px
+		margin: 0 auto
+
+	.header
+		padding-top: 16px
+		&-logo
+			img
+				height: 32px
+		&-nav
+			li:not(:first-child)
+				display: none
+
+	.hero
+		height: auto
+		padding: 60px 0
+		&-title
+			font-size: 28px
+			max-width: 300px
+			span
+				font-size: 68px
+				text-shadow: -0.4px -0.4px 0 var(--color-accent), 0.4px -0.4px 0 var(--color-accent), -0.4px 0.4px 0 var(--color-accent), 0.4px 0.4px 0 var(--color-accent)
+				transform: none
+				display: block
+				&::after
+					width: 150px
+					height: 10px
+					background-size: cover
+					right: initial
+					left: 50%
+					bottom: 10px
+					transform: translateX(-50%)
+		&-desc
+			font-size: 16px
+			margin-top: 20px
+			max-width: 460px
+		&-buttons
+			width: 100%
+
+	.partners
+		padding: 30px 0
+		&-title
+			font-size: 24px
+			max-width: 320px
+		&-carousel
+			.swiper-slide
+				width: 200px
+				height: 84px
+
+	.results
+		.title
+			padding-top: 40px
+			max-width: 250px
+			margin: 0 auto
+			line-height: 0.38
+			b
+				font-size: 38px
+				top: -14px
+			span
+				width: 300px
+				margin-top: 0
+				top: 0
+		&-main
+			margin-top: 30px
+			padding: 10px
+		&-total
+			padding: 20px
+			&__head
+				gap: 20px
+			&__title
+				font-size: 18px
+			&__text
+				font-size: 14px
+				max-width: 100% !important
+				width: 100%
+			&__table
+				padding: 10px
+				font-size: 14px
+				overflow: auto
+				&::-webkit-scrollbar
+					display: none
+				&-row
+					width: 600px
+					display: grid
+					grid-auto-flow: column
+					grid-template-columns: minmax(200px, 1fr)
+				&-col
+					width: 200px !important
+					flex: initial !important
+					max-width: initial !important
+			&__source
+				position: relative
+				bottom: 0
+				right: 0
+				padding-top: 10px
+		&-real
+			padding-top: 20px
+			&__title
+				font-size: 21px
+				margin-left: 10px
+				max-width: 200px
+				margin-bottom: 20px
+			&__case
+				width: 100%
+				&-text
+					font-size: 14px
+		&-button
+			margin-top: 20px
+			gap: 20px
+			p
+				font-size: 14px
+
+	.partners
+		&-join
+			height: auto
+			padding: 20px
+			&__title
+				font-size: 32px
+				max-width: 300px
+				margin: 0 auto
+				text-align: center
+				span
+					font-size: 80px
+					i
+						font-size: 34px
+				&::before
+					left: -50px
+					top: -20px
+				&::after
+					transform: scale(0.8)
+					bottom: -36px
+					left: 200px
+			&__carousel
+				position: relative
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				margin: 0 auto
+				max-width: 100%
+				margin-top: 20px
+				.swiper-wrapper
+					@include flexbox
+					flex-direction: column
+					align-items: center
+				.swiper-slide
+					width: 100%
+			&__item
+				text-align: center
+				padding: 25px 0
+				border-color: rgba(255,255,255,.25)
+				&-text
+					font-size: 14px
+					margin: 0 auto
+			&__action
+				order: 1
+				width: 100%
+				margin-top: 35px
+				max-width: 100%
+				gap: 20px
+				align-items: center
+				p
+					font-size: 14px
+					text-align: center
+
+	.cases
+		&-tags
+			gap: 6px
+			li
+				font-size: 14px
+				line-height: 16px
+				padding: 10px 20px
+		&-carousel
+			&__prev,
+			&__next
+				width: 36px
+				height: 36px
+		&-result
+			p
+				font-size: 14px
+			.btn
+				width: auto
+		.title
+			span
+				padding-bottom: 0
+				position: relative
+				display: block
+				bottom: 0
+
+	.help
+		.title
+			line-height: 0.4
+		&-item,
+		&-cta
+			width: 100% !important
+			flex: initial !important
+		&-title
+			font-size: 24px
+			padding: 20px 8px
+			max-width: 260px
+		&-item
+			padding: 20px
+			&__image
+				left: 50% !important
+				right: initial !important
+				transform: translateX(-50%) !important
+				top: 6px !important
+			&__text
+				max-width: 230px
+				span
+					font-size: 14px
+				p
+					font-size: 16px
+
+	.why
+		padding-top: 20px
+		.title
+			margin-bottom: 30px
+			span
+				position: relative
+				display: block
+				margin: 0
+				bottom: 0
+		&-item:not(.why-item-black .why-item)
+			width: 100% !important
+		&-item
+			&__text
+				font-size: 16px
+				max-width: 340px
+
+	.algorithm
+		padding-top: 30px
+		.title
+			padding-top: 0
+			line-height: 0.45
+			margin-bottom: 30px
+			span
+				display: block
+				position: relative
+				bottom: 0 !important
+				margin: 0
+				width: 100% !important
+				&:first-child
+					max-width: 200px
+					margin-bottom: 20px
+				&:last-child
+					margin: 0
+					text-align: center
+					margin-top: 10px
+		&-steps
+			&__item
+				width: 280px !important
+				padding: 0 20px
+			&__line
+				height: 30px
+			&__done
+				left: 20px
+				bottom: -14px
+				height: 160px
+		&-after
+			&__title
+				font-size: 34px
+				text-align: center
+				span
+					font-size: 80px
+					margin-top: -36px
+			&__images
+				margin: 0 -15px
+				img
+					height: auto
+					flex: 1
+					min-width: 10px
+
+	.tariffs
+		padding-top: 30px
+		.title
+			margin-bottom: 30px
+			span
+				padding-top: 0
+		&-item
+			&__content
+				padding-left: 0
+				padding-right: 0
+				margin-bottom: 0
+				ul
+					li
+						position: relative
+					li.no
+						display: none
+			&__desc
+				padding-left: 0
+				padding-right: 0
+			&__design
+				position: initial
+				&-popup
+					bottom: 100%
+					left: 50%
+					transform: translateX(-50%)
+					right: 0
+			&__total
+				li
+					padding-left: 0
+					padding-right: 0
+					b
+						font-size: 28px
+			&__cta
+				padding-left: 0
+				padding-right: 0
+				p
+					max-width: 255px
+					margin-left: auto
+					margin-right: auto
+		&-free
+			padding: 12px
+			margin-top: 12px
+			overflow: hidden
+			&__head
+				padding-bottom: 30px
+				span
+					font-size: 94px
+					line-height: 0.45
+					margin: 8px 0 16px
+				p
+					font-size: 16px
+			&__bonus
+				&-title
+					margin: 30px 0
+					font-size: 24px
+					max-width: 220px
+
+	.offer
+		padding-top: 30px
+		.title
+			font-size: 90px
+			text-transform: lowercase
+			line-height: 0.4
+			span
+				width: 300px
+				text-transform: none
+		&-grid
+			margin: 0
+			flex-direction: column
+			flex-wrap: wrap
+			align-items: flex-start
+			width: 100%
+			gap: 30px
+		&-item
+			width: 100% !important
+			img
+				width: 100%
+				height: 170px
+			p
+				opacity: 0.4
+
+	.footer
+		&-text
+			order: 1
+			flex-direction: column-reverse
+		&-buttons
+			align-items: flex-start
+			flex-direction: column
+			width: 100%
+			margin: 30px 0
+			.btn
+				width: auto
+				margin: 0

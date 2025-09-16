@@ -17,16 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
     freeMode: true,
   });
 
-  const joinCarousel = new Swiper('.partners-join__carousel', {
-    direction: 'vertical',
-    loop: true,
-    slidesPerView: 'auto',
-    speed: 5000,
-    autoplay: {
-      delay: 1,
-    },
-    freeMode: true,
-  });
+  if (window.innerWidth > 768) {
+    const joinCarousel = new Swiper('.partners-join__carousel', {
+      direction: 'vertical',
+      loop: true,
+      slidesPerView: 'auto',
+      speed: 5000,
+      autoplay: {
+        delay: 1,
+      },
+      freeMode: true,
+    });
+  }
 
   const casesCarousel = new Swiper('.cases-carousel', {
     spaceBetween: 8,
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const offerScroller = document.querySelector('.offer-scroller');
-  if (offerScroller) {
+  if (offerScroller && window.innerWidth > 768) {
     const scroller = new Scroller({
       element: offerScroller,
       scrollbar: 'hidden',
