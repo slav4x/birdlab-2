@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Fancybox.bind('[data-fancybox]', {
-  //   dragToClose: false,
-  //   autoFocus: false,
-  //   placeFocusBack: false,
-  //   Thumbs: false,
-  // });
+  Fancybox.bind('[data-fancybox]', {
+    dragToClose: false,
+    autoFocus: false,
+    placeFocusBack: false,
+    Thumbs: false,
+  });
 
   const partnersCarousel = new Swiper('.partners-carousel', {
     loop: true,
@@ -54,28 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
       element: offerScroller,
       scrollbar: 'hidden',
       navigation: 'hidden',
-    });
-  }
-});
-
-document.addEventListener('click', function (e) {
-  const link = e.target.closest('a[href^="#"]');
-  if (!link) return;
-
-  const targetId = link.getAttribute('href').slice(1);
-  const targetEl = document.getElementById(targetId);
-  if (!targetEl) return;
-
-  e.preventDefault();
-
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  if (isSafari) {
-    targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } else {
-    let offsetTop = targetEl.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth',
     });
   }
 });

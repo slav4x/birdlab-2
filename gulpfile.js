@@ -105,7 +105,7 @@ const js = () => {
 // Сборка JS-библиотек
 const libs_js = () => {
   return src([
-    // 'src/js/vendor/fancybox.umd.js',
+    'src/js/vendor/fancybox.umd.js',
     'src/js/vendor/swiper-bundle.min.js',
     // 'src/js/vendor/gsap.min.js',
     // 'src/js/vendor/ScrollTrigger.min.js',

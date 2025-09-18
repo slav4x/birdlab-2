@@ -17,6 +17,66 @@
 	</div>
 	<div class="footer-buttons">
 		<a href="#" class="btn btn-darkblue">Связь с основателем</a>
-		<a href="#" class="btn btn-accent">Оставить заявку</a>
+		<a href="javascript:;" data-fancybox data-src="popup-consult" data-form="Оставить заявку" class="btn btn-accent">Оставить заявку</a>
 	</div>
 </footer>
+
+<div class="popup" id="popup-consult">
+	<h3 class="popup-title">Запишитесь на бесплатную консультацию</h3>
+	<p class="popup-desc">Разберём вашу задачу и покажем, как может выглядеть ваш сайт</p>
+	<form action="#" method="post" class="popup-form">
+		<div class="popup-input__group">
+			<input type="text" name="name" class="popup-input" placeholder="Как вас зовут?">
+			<input type="tel" name="phone" class="popup-input masked" placeholder="Ваш номер телефона (WhatApp)">
+			<input type="text" name="telegram" class="popup-input" placeholder="Логин в Telegram (например, @ivan_ivanov)">
+		</div>
+		<label class="popup-textarea__label">
+			<p>Опишите ваш проект: ниша и что продаете</p>
+			<textarea name="text" class="popup-textarea" placeholder="Будет идеально, если пропишете нюансы которые вам важны, чтобы мы подготовились к созвону"></textarea>
+		</label>
+		<div class="popup-radio__group">
+			<p>Что вы хотели бы реализовать?</p>
+			<label class="popup-radio">
+				<input type="radio" name="type" value="Сайт" checked>
+				<span>Сайт</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="type" value="Презентации">
+				<span>Презентации</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="type" value="Продукт">
+				<span>Продукт</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="type" value="Приложение">
+				<span>Приложение</span>
+			</label>
+		</div>
+		<div class="popup-radio__group">
+			<p>В какие сроки хотите уложиться?</p>
+			<small>Чем больше времени, тем лучше результат</small>
+			<label class="popup-radio">
+				<input type="radio" name="time" value="Горит (3-5 дней)" checked>
+				<span>Горит (3-5 дней)</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="time" value="5-14 дней">
+				<span>5-14 дней</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="time" value="14-20 дней">
+				<span>14-20 дней</span>
+			</label>
+			<label class="popup-radio">
+				<input type="radio" name="time" value="20+ дней">
+				<span>20+ дней</span>
+			</label>
+		</div>
+		<button class="btn btn-accent">Получить бесплатную консультацию</button>
+		<label class="popup-checkbox">
+			<input type="checkbox" name="politic" required checked>
+			<span>Я даю согласие на обработку персональных данных на условиях, изложенных в <a href="#">Политике конфиденциальности</a></span>
+		</label>
+	</form>
+</div>
