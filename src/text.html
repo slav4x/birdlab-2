@@ -1,0 +1,101 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Статья' %}
+
+{% block content %}
+
+<section class="text">
+	<ul class="text-breadcrumbs">
+		<li><a href="/">Кейсы</a></li>
+		<li><a href="#">Проект «Магия чисел»</a></li>
+	</ul>
+	<div class="text-content">
+		<h1>Как получить окупаемость 1 к 3 в нише нумерологии всего за 1 месяц при среднем чеке продукта 50 000 рублей</h1>
+		<p>Какая фишка в канале снижает стоимость подписчика. И какие креативы приводят дешевую покупающую аудиторию в нише, с которой многие таргетологи отказываются иметь дело.</p>
+		<p>Одна из ключевых задач маркетинга — найти проблему, которая болит у целевой аудитории и предложить решение этой проблемы в виде продукта.</p>
+		<p>Но одно дело, когда у людей «болит» что-то вполне осязаемое, например, мусор на полу. </p>
+		<p>Логично, что решением будет пылесос. Использовал и тут же видишь желаемый результат в виде чистоты. И другое, когда есть проблемы в отношениях, на работе. А как и чем это решить непонятно. Да и результат не измерить в цифрах и фактах.</p>
+	</div>
+</section>
+
+<section class="tariffs" id="tariffs" style="padding: 0;">
+	<div class="tariffs-free">
+		<div class="tariffs-free__head">
+			<p>Запишитесь на бесплатную консультацию и получите</p>
+			<span>персональный план</span>
+			<p>по упаковке вашей онлайн-школы или запуска</p>
+		</div>
+		<div class="tariffs-free__bonus-title">Бонусы при записи на консультацию</div>
+		<ul class="tariffs-free__bonus-list">
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-type">Тариф «Max»</div>
+				<div class="tariffs-free__bonus-head">
+					<p>Аудит вашей текущей упаковки</p>
+					<p>Разберём текущий сайт, визуал и структуру воронки: что тормозит рост, где теряются заявки.</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p><b>Вы получите PDF с конкретными правками</b>, которые можно внедрить сразу — даже без нашей помощи.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p>Готовые референсы и схемы успешных лендингов</p>
+					<p>Выберем 2–3 подхода под вашу нишу и покажем, как они влияют на конверсию.</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p>Отдадим примеры экранов и UX-логики, <b>которые сработали у наших клиентов</b>.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p>Ответы на ваши вопросы по GetCourse / сайтам / презентациям / визуалу</p>
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p>Можно разобрать конкретный вопрос на созвоне — бесплатно.</p>
+					<p>Например: «Что не так с моим лендингом, как сделать его удобнее?», «Какой формат вебинара лучше сделать?» и т.д.</p>
+				</div>
+			</li>
+			<li class="tariffs-free__bonus-item">
+				<div class="tariffs-free__bonus-head">
+					<p><b>Чек-лист:</b> «Как быстро поднять конверсию сайта на 30–100%» небольшими усилиями.</p>
+					<img src="img/tariffs-bonus.jpg" alt="" loading="lazy">
+				</div>
+				<div class="tariffs-free__bonus-bottom">
+					<p><b>Узнаете, какие 7 ошибок съедают конверсию</b> и как быстро их исправить — без редизайна и программистов.</p>
+				</div>
+			</li>
+		</ul>
+		<a href="javascript:;" data-fancybox data-src="#popup-consult" data-form="Получить бонусы" class="btn btn-accent">Получить бонусы</a>
+	</div>
+</section>
+
+<section class="offer">
+	<h2 class="title">Мы предлагаем<span>Чтобы не бегать по подрядчикам, посмотрите что еще</span></h2>
+	<div class="offer-scroller">
+		<div class="offer-grid">
+			<a href="https://t.me/thepackbird_bot" target="_blank" class="offer-item">
+				<img src="img/offer-01.jpg" alt="" loading="lazy">
+				<b>Полная упаковка онлайн-курсов</b>
+				<p>От методологии и контента, который помогает ученикам лучше применять материал до визуала, который цепляет и застравляет возвращаться</p>
+			</a>
+			<a href="https://t.me/thepackbird_bot" target="_blank" class="offer-item">
+				<img src="img/offer-02.jpg" alt="" loading="lazy">
+				<b>Презентации</b>
+				<p>Сделаем визуал, который захватит внимание аудитории</p>
+			</a>
+			<a href="https://t.me/thepackbird_bot" target="_blank" class="offer-item">
+				<video preload playsinline autoplay loop muted>
+                    <source src="video/offer-video.mp4" type="video/mp4">
+                </video>
+				<b>Видео-продакшен</b>
+				<p>Смонтируем автовебы, уроки, Reels и Shorts. Накинем графику, цветокоррекцию, уберем лишнее</p>
+			</a>
+			<a href="https://t.me/thepackbird_bot" target="_blank" class="offer-item">
+				<img src="img/offer-04.jpg" alt="" loading="lazy">
+				<b>GetСourse</b>
+				<p>Реализуем любой дизайн и геймификации на платформе</p>
+			</a>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

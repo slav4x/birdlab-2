@@ -21,8 +21,13 @@
 				background: var(--color-black)
 				color: #fff
 	&-carousel
-		width: 872px
+		// width: 872px
 		margin: 0 auto
+		.swiper-slide.is-hidden
+			display: none
+		.swiper-slide
+			width: 278px
+			height: auto
 		&__wrapper
 			margin-top: 20px
 			position: relative
@@ -68,7 +73,7 @@
 		@include flexbox
 		flex-direction: column
 		align-items: flex-start
-		height: 420px
+		height: 100%
 		transition: .3s
 		position: relative
 		overflow: hidden
@@ -86,6 +91,10 @@
 		&__title
 			font-weight: 700
 			font-size: 18px
+			overflow: hidden
+			display: -webkit-box
+			-webkit-line-clamp: var(--line-camp)
+			-webkit-box-orient: vertical
 		&__text
 			margin-top: 12px
 			font-size: 14px
@@ -94,11 +103,19 @@
 		&__tags
 			width: 100%
 			@include flexbox
+			// white-space: nowrap
 			align-items: flex-start
 			gap: 8px
 			font-size: 14px
 			line-height: 16px
 			padding: 12px 8px
+			// padding: 12px 16px
+			// margin-left: -8px
+			// margin-right: -8px
+			// position: relative
+			// z-index: 12
+			&::-webkit-scrollbar
+				display: none
 			li
 				padding: 5px 8px
 				border-radius: 99px
@@ -134,6 +151,32 @@
 			transform: rotate(-2.5deg)
 			.cases-item__button
 				background: var(--color-accent)
+		&.soon
+			position: relative
+			overflow: hidden
+			pointer-events: none
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: rgba(0,0,0,.2)
+				z-index: 10
+			&::after
+				content: 'Скоро'
+				position: absolute
+				top: 16px
+				right: 16px
+				background: #fff
+				font-size: 14px
+				line-height: 16px
+				padding: 5px 8px
+				border-radius: 999px
+				z-index: 20
+			.cases-item__button
+				opacity: 0.4
 	&-result
 		text-align: center
 		@include flexbox

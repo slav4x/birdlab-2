@@ -1,27 +1,9 @@
-<footer class="footer">
-	<a href="/" class="footer-logo"><img src="img/svg/logo-new-white.svg" alt="" loading="lazy"></a>
-	<div class="footer-text">
-		<div class="footer-info">
-			<p>ИП Ромашов Михаил Владимирович</p>
-			<p>ИНН: 244316210732 / ОГРНИП: 322246800046180</p>
-			<br>
-			<ul class="footer-links">
-				<li><a href="#">Политика конфиденциальности</a></li>
-			</ul>
-		</div>
-		<div class="footer-info">
-			<p>Цифры, предоставленные на сайте не являются гарантией результата, но показывают нашу экспертность.</p>
-			<br>
-			<p>Instagram - запрещенная в РФ организация.</p>
-		</div>
-	</div>
-	<div class="footer-buttons">
-		<a href="#" class="btn btn-darkblue">Связь с основателем</a>
-		<a href="javascript:;" data-fancybox data-src="popup-consult" data-form="Оставить заявку" class="btn btn-accent">Оставить заявку</a>
-	</div>
-</footer>
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Форма' %}
 
-<div class="popup" id="popup-consult">
+{% block content %}
+
+<div class="popup" style="display: flex; padding: 32px; margin: 0 auto;">
 	<h3 class="popup-title">Запишитесь на бесплатную консультацию</h3>
 	<p class="popup-desc">Разберём вашу задачу и покажем, как может выглядеть ваш сайт</p>
 	<form action="#" method="post" class="popup-form">
@@ -92,3 +74,5 @@
 	</div>
 	<a href="https://t.me/thepackbird_bot" target="_blank" class="btn btn-accent">Подписаться на Telegram-бота</a>
 </div>
+
+{% endblock %}
