@@ -236,8 +236,11 @@
 				display: block
 				margin: 0
 				bottom: 0
-		&-item:not(.why-item-black .why-item)
+		&-item
 			width: 100% !important
+			&-black .why-item
+				width: calc(100% + 34px) !important
+
 		&-item
 			&__text
 				font-size: 16px
@@ -384,7 +387,8 @@
 
 	.popup
 		padding: 48px 32px 32px
-		&-title
+		&-title,
+		&-title-xl
 			font-size: 22px
 		&-desc
 			font-size: 16px
@@ -415,6 +419,9 @@
 		&-checkbox
 			span
 				font-size: 14px
+		&-text
+			font-size: 16px
+			gap: 16px
 
 	.text
 		padding: 20px

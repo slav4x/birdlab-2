@@ -221,4 +221,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   clearUtmParamsIfExpired();
+
+  const banner = document.querySelector('.banner');
+  if (banner) {
+    const bannerClose = banner.querySelector('.banner-close');
+    bannerClose.addEventListener('click', () => {
+      banner.style.display = 'none';
+    });
+  }
 });

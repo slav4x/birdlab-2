@@ -51,15 +51,20 @@ input, textarea
   align-items: center
   justify-content: center
   gap: 4px
+  transition: .2s
   &-wrap
     @include flexbox
     align-items: center
     gap: 8px
   &-darkblue
     background: #354E77
+    &:hover
+      background: #2b4062
   &-accent
     background: var(--color-accent)
     box-shadow: 0px 5px 23.2px rgba(107, 5, 230, 0.21)
+    &:hover
+      background: #5805bd
   &-star
     box-shadow: inset 0 0 0 1px rgba(26, 26, 26, 0.1)
     color: var(--color-black)
@@ -69,9 +74,13 @@ input, textarea
       width: 14px
       height: 14px
       background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.17082 1.22999C6.56723 0.641968 7.43277 0.641967 7.82918 1.22999L8.90419 2.82464C9.07636 3.08003 9.35661 3.24184 9.66387 3.26325L11.5824 3.3969C12.2898 3.44619 12.7226 4.19577 12.4116 4.83309L11.5681 6.5614C11.433 6.8382 11.433 7.1618 11.5681 7.4386L12.4116 9.16691C12.7226 9.80422 12.2898 10.5538 11.5824 10.6031L9.66387 10.7368C9.35661 10.7582 9.07636 10.92 8.90419 11.1754L7.82918 12.77C7.43277 13.358 6.56723 13.358 6.17082 12.77L5.09581 11.1754C4.92364 10.92 4.64339 10.7582 4.33613 10.7368L2.41762 10.6031C1.71017 10.5538 1.2774 9.80422 1.58844 9.16691L2.43194 7.4386C2.56703 7.1618 2.56703 6.8382 2.43194 6.5614L1.58844 4.83309C1.2774 4.19578 1.71017 3.44619 2.41762 3.3969L4.33613 3.26325C4.64339 3.24184 4.92364 3.08003 5.09581 2.82464L6.17082 1.22999Z' fill='%236B05E6'/%3E%3C/svg%3E%0A") no-repeat center
+    &:hover
+      background: rgba(26, 26, 26, 0.05)
   &-white
     background: #fff
     color: var(--color-black)
+    &:hover
+      background: #e8e8e8
 
 .title
   font-weight: 400
@@ -111,3 +120,60 @@ input, textarea
 
 .fancybox__container
   --fancybox-bg: rgba(0, 0, 0, 0.6)
+
+.banner
+  position: sticky
+  bottom: 0
+  width: 100%
+  z-index: 100
+  background: var(--color-black)
+  padding: 10px 0
+  &-content
+    max-width: 1160px
+    margin: 0 auto
+    padding: 0 30px
+    position: relative
+    @include flexbox
+    align-items: center
+    p
+      font-size: 16px
+      line-height: 1.08
+      max-width: 450px
+      color: rgba(255,255,255,.6)
+      b
+        color: #fff
+        font-weight: 700
+  .btn
+    height: 70px
+    font-size: 18px
+    font-weight: 700
+    padding: 0 20px
+    margin-left: auto
+  &-close
+    width: 16px
+    height: 16px
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20.4085' height='2.21836' rx='1.10918' transform='matrix(0.707091 -0.707123 0.707091 0.707123 0 14.4313)' fill='white'/%3E%3Crect width='20.4085' height='2.21836' rx='1.10918' transform='matrix(0.707091 0.707123 -0.707091 0.707123 1.56934 0)' fill='white'/%3E%3C/svg%3E%0A") no-repeat center
+    cursor: pointer
+    margin-bottom: auto
+    margin-left: 20px
+
+@media (max-width: 800px)
+  .banner
+    padding: 16px
+    text-align: center
+    &-content
+      padding: 0
+      flex-direction: column
+      gap: 16px
+      p
+        font-size: 16px
+        max-width: calc(100% - 40px)
+    .btn
+      margin: 0
+      height: 50px
+      font-size: 16px
+      width: 100%
+    &-close
+      position: absolute
+      top: 0
+      right: 0
