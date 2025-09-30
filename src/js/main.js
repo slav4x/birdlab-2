@@ -229,4 +229,76 @@ document.addEventListener('DOMContentLoaded', () => {
       banner.style.display = 'none';
     });
   }
+
+  (function () {
+    const tg = document.querySelector('.tg');
+    if (!tg) return;
+
+    const video = tg.querySelector('.tg-video');
+    const close = tg.querySelector('.tg-close');
+    const timerEl = tg.querySelector('.tg-timer');
+
+    // сколько секунд длительность
+    const DURATION = 59;
+
+    let countdown = DURATION;
+    let intervalId;
+
+    const formatTime = (secs) => {
+      const m = String(Math.floor(secs / 60)).padStart(2, '0');
+      const s = String(secs % 60).padStart(2, '0');
+      return `${m}:${s}`;
+    };
+
+    const resetTimer = () => {
+      clearInterval(intervalId);
+      countdown = DURATION;
+      timerEl.textContent = formatTime(countdown);
+    };
+
+    const startTimer = () => {
+      resetTimer();
+      intervalId = setInterval(() => {
+        countdown--;
+        timerEl.textContent = formatTime(countdown);
+        if (countdown <= 0) {
+          clearInterval(intervalId);
+          tg.classList.add('is-hidden');
+          video.pause();
+        }
+      }, 1000);
+    };
+
+    // выставляем изначальное значение
+    resetTimer();
+
+    // видео с mute по дефолту
+    video.muted = true;
+    video.play().catch(() => {});
+
+    tg.addEventListener('click', () => {
+      if (video.muted) {
+        // включаем звук и запускаем таймер
+        video.currentTime = 0;
+        video.muted = false;
+        tg.classList.add('play');
+        video.classList.add('with-sound');
+        video.play().catch(() => {});
+        startTimer();
+      } else {
+        // обратно в mute и сброс таймера
+        video.muted = true;
+        tg.classList.remove('play');
+        video.classList.remove('with-sound');
+        resetTimer();
+      }
+    });
+
+    const hide = () => {
+      video.pause();
+      clearInterval(intervalId);
+      tg.classList.add('is-hidden');
+    };
+    close.addEventListener('click', hide);
+  })();
 });

@@ -157,6 +157,87 @@ input, textarea
     margin-bottom: auto
     margin-left: 20px
 
+.tg
+  position: fixed
+  bottom: 30px
+  right: 30px
+  width: 210px
+  background: #fff
+  z-index: 110
+  box-shadow: 0px 10px 24.3px rgba(0, 0, 0, 0.07)
+  border-radius: 20px
+  padding: 36px 12px 12px
+  @include flexbox
+  flex-direction: column
+  align-items: center
+  gap: 8px
+  text-align: center
+  transition: .3s
+  &.is-hidden
+    right: -400px
+  &.play
+    .btn
+      height: 32px
+  &-video
+    width: 100px
+    height: 100px
+    object-fit: cover
+    object-position: center
+    border-radius: 100%
+    cursor: pointer
+    transition: .2s
+    &__wrapper
+      width: 120px
+      height: 120px
+      @include flexbox
+      align-items: center
+      justify-content: center
+      margin: 0 auto
+      transition: .2s
+    &.with-sound
+      width: 120px
+      height: 120px
+  &-timer
+    width: 46px
+    height: 20px
+    background: #1A1A1A
+    color: #fff
+    text-align: center
+    line-height: 20px
+    border-radius: 6px
+    font-size: 12px
+  &-text
+    font-size: 14px
+  .btn
+    width: 100%
+    height: 0
+    overflow: hidden
+    font-size: 14px
+    padding: 0
+    max-width: 100%
+  &-close
+    position: absolute
+    top: 16px
+    right: 16px
+    cursor: pointer
+    width: 8px
+    height: 8px
+    background: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='10.2043' height='1.10918' rx='0.55459' transform='matrix(0.707091 -0.707123 0.707091 0.707123 0 7.21567)' fill='%23111111'/%3E%3Crect width='10.2043' height='1.10918' rx='0.55459' transform='matrix(0.707091 0.707123 -0.707091 0.707123 0.784668 0)' fill='%23111111'/%3E%3C/svg%3E%0A")
+  &-top
+    @include flexbox
+    align-items: center
+    gap: 8px
+  &-name
+    font-size: 12px
+    line-height: 1
+    opacity: 0.6
+  &-content
+    @include flexbox
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    width: 100%
+
 @media (max-width: 800px)
   .banner
     padding: 16px
@@ -177,3 +258,41 @@ input, textarea
       position: absolute
       top: 0
       right: 0
+
+@media (max-width: 576px)
+  .tg
+    width: auto
+    right: 10px
+    bottom: 10px
+    left: 10px
+    flex-direction: row
+    padding: 12px
+    border-radius: 16px
+    gap: 0px 8px
+    &.is-hidden
+      right: 10px
+      bottom: -300px
+    &.play
+      .btn
+        margin-top: 8px
+      .tg-video__wrapper
+        width: 64px
+        height: 64px
+    &-video
+      width: 100% !important
+      height: 100% !important
+      &__wrapper
+        order: -1
+        width: 44px
+        height: 44px
+    &-content
+      flex: 1
+      align-items: flex-start
+      text-align: left
+      gap: 4px
+    &-timer
+      width: 34px
+      height: 14px
+      border-radius: 4px
+      font-size: 10px
+      line-height: 14px
